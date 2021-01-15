@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  --color1: #92A8DA;
+  --color2: #F7CAC9;
+  --colorbg: #101820;
+  background-color: var(--colorbg);
+  color: var(--color1);
+}
+
+a {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.mainvisual {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 3;
+    overflow: hidden;
+    background-color: #101820;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav__brand {
+    width: 90px;
+}
+
+.nav__brand img {
+    width: 100%;
+}
+
+.nav__link {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.toggle__menu {
+    display: none;
+}
+
+#top, #middle, #bottom{
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--color1);
+    margin: 7px;
+    transition: ease-in-out 0.5s;
+}
+
+.active {
+    transition: ease-in-out 0.5s;
+}
+
+.active > #top {
+    transition: ease-in-out 0.5s;
+    transform: translateY(8px) rotate(45deg);
+}
+.active > #middle {
+   transition: ease-in-out 0.5s;
+   width: 0;
+   opacity: 0;
+}
+
+.active > #bottom {
+    transition: ease-in-out 0.5s;
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    visibility: hidden;
+    background-color: var(--colorbg);
+    opacity: 0;
+    transition:0.5s
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mainvisual__img {
+  width: 400px;
+}
+
+
+.mainvisual__img img {
+  width: 100%;
+}
+
+
+.section__inner h2 {
+    text-align: center;
+}
+
+
