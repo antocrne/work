@@ -226,7 +226,7 @@ z-index: 4;
     visibility: hidden;
     background-color: var(--colorbg);
     opacity: 0;
-    transition:0.5s
+    transition:0.5s;
 }
 
 .open {
@@ -244,7 +244,7 @@ z-index: 4;
     font-size: 16rem;
     font-weight: 300;
     color: var(--color2);
-    opacity: 0;
+    opacity: 0.2;
 }
 
 .overlay__nav {
@@ -266,11 +266,13 @@ z-index: 4;
    
 }
 
-.is-active {
+.is-active { 
+    opacity: 1;
     transition: 0.5s ease-in-out;
     transition-delay: 1s;
-    opacity: 1;
 }
+
+
 
 .h__content {
     width: 100%;
@@ -432,6 +434,11 @@ z-index: 4;
 #reveal4.visible {
     opacity: 1;
 }
+
+/*
+Project page CSS
+*/
+
 
 
   

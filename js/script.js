@@ -2,8 +2,10 @@ $('#toggle').click(function() {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
     $('.ol').toggleClass('is-active');
-    $('.jp__brand').toggleClass('is-active');
 });
+
+
+
 
 
 var controller = new ScrollMagic.Controller();
