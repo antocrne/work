@@ -13,6 +13,27 @@
     .mainvisual__img {
       width: 300px;
     }
+
+    .jp__brand {
+        pointer-events: none;
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        font-size: 8rem;
+        font-weight: 300;
+        color: var(--color2);
+        
+    }
+    
+
+    .ol {
+        z-index: 7;
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin: 3%;
+        
+    }
     
   }
   

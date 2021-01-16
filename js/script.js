@@ -1,10 +1,10 @@
-$(document).ready(function() {
-    $('#toggle').click(function() {
-        $(this).toggleClass('active');
-        $('#overlay').toggleClass('open');
-        gsap.to(".ol", {delay: 0.5, opacity: 1, top: 0, duration: 0.5, ease: "power2"});
-        gsap.to(".jp__brand", {delay: 1, opacity: 1, duration: 1});
-    });
-}); 
+$('#toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+    $('.ol').toggleClass('is-active');
+    $('.jp__brand').toggleClass('is-active');
+});
 
 
+
+var rellax = new Rellax('.title__rellax');
