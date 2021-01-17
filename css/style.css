@@ -50,8 +50,17 @@ a {
     margin-left: 15px;
 }
 
+.navbar-light .navbar-nav .nav-about {
+    color: var(--color1);
+   
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: var(--color4);
+}
+
+.navbar-light .navbar-nav .nav-about:hover {
+    color: var(--color1);
 }
 
 .navbar-light .navbar-toggler {
@@ -61,6 +70,10 @@ a {
 
 .navbar-nav {
     text-align: end;
+}
+
+.is-underline {
+    border-bottom: 1px solid var(--color1);
 }
 
 .toggle__index {
@@ -344,9 +357,7 @@ a {
 }
 
 #about-grid{
-	display: grid; 
-	grid-template-columns: repeat(2, 50vw);
-    grid-gap:0;
+	display: flex; 
     position: relative;
     z-index: 1;
 }
