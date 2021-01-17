@@ -1,0 +1,54 @@
+
+@media screen and (max-width: 568px) {
+    .mainvisual__img {
+        width: 250px
+    }
+
+    .title__h h1 {
+        font-size: 1.8rem;
+    }
+
+    .section__title {
+        padding-top: 10%;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+        height: 40vh;
+        
+    }
+
+    .col {
+        margin-bottom: 20%;
+    }
+
+    .card-img-top {
+        width: 100px;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .socials {
+        display: flex; 
+        margin-left: 0; 
+    }
+
+    .socials a {
+        margin-left: 10px;
+    }
+
+    .social__img {
+        width: 30px;
+    }
+
+    .mail {
+        margin-right: 5px;
+    }
+
+    #email {
+        font-size: 12px;
+    }
+
+    .exp__btn {
+       font-size: 14px;
+    }
+}

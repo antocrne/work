@@ -29,7 +29,7 @@ $('#toggle').click(function() {
         var emailHeight = $("#email").height();
         let emailContent = document.getElementById("email").innerHTML;
 
-        document.getElementById("email").innerHTML = "Email copié dans le presse-papier";
+        document.getElementById("email").innerHTML = "Email copié !";
 
         setTimeout(function(){
             document.getElementById("email").innerHTML = "hello@fuyu.studio";
