@@ -124,7 +124,7 @@ a {
     background-position: center;
     transform: scale(1.2);
     filter: blur(10px) brightness(60%);
-
+    overflow: hidden;
 }
 
 .mainvisual__img {
