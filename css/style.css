@@ -26,7 +26,7 @@ body:after {
     height: 100%;
     content: "";
     background-image: url("../img/bg/snow.gif");
-    opacity: 0.08;
+    opacity: 0.2;
     z-index: 0;
     pointer-events: none;
   }
@@ -125,6 +125,7 @@ a {
     transform: scale(1.2);
     filter: blur(10px) brightness(60%);
     overflow: hidden;
+    pointer-events: none;
 }
 
 .mainvisual__img {
@@ -132,7 +133,8 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px
+    width: 400px;
+    pointer-events: none;
 }
 
 .mainvisual__img img {
@@ -227,6 +229,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .title__h {
@@ -287,6 +290,7 @@ a {
     letter-spacing: 2px;
     font-size: 14px;
     align-items: center;
+    z-index: 1;
 }
 
 .socials {
@@ -300,6 +304,11 @@ a {
 
 .social__img {
     width: 35px;
+    transition: 0.5s ease-in-out;
+}
+
+.social__img:hover {
+    opacity: 0.5;
 }
 
 .mail {
@@ -314,6 +323,7 @@ a {
 
 .exp {
     text-align: center;
+    z-index: 1;
 }
 
 .exp__btn {
@@ -328,4 +338,46 @@ a {
     color: var(--color4);
     background-color: var(--color1);
 }
+
+.about__section {
+    padding-top: 15%;
+    z-index: 1;
+}
+
+.about__title {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.about__title h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--color2);
+}
+
+.info__txt {
+    font-weight: 300;
+}
+
+.a__gallery {
+    position: relative;
+    z-index: 2;
+}
+
+.p__img {
+    width: 100%;
+    margin: auto;
+}
+
+.p__img img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.col-sm {
+    padding-top: calc(var(--bs-gutter-x)/ 2);
+    padding-bottom: calc(var(--bs-gutter-x)/ 2);
+}
+
 
