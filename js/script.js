@@ -1,58 +1,37 @@
 $('#toggle').click(function() {
     $(this).toggleClass('active');
-    $('#overlay').toggleClass('open');
-    $('.ol').toggleClass('is-active');
 });
 
+    
+    $("#email").click(function() {
 
+        if (document.selection) { // IE
+            var range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById("email"));
+            range.select();
+        } else if (window.getSelection) {
+            var range = document.createRange();
+            range.selectNode(document.getElementById("email"));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+        }
+        document.execCommand("copy");
 
+        if (window.getSelection) {
+            window.getSelection().removeAllRanges();
+        }
+        else if (document.selection) {
+            document.selection.empty();
+        }
 
+        var posEmailX = $("#email").offset().left;
+        var posEmailY = $("#email").offset().top;
+        var emailHeight = $("#email").height();
+        let emailContent = document.getElementById("email").innerHTML;
 
-var controller = new ScrollMagic.Controller();
+        document.getElementById("email").innerHTML = "Email copié dans le presse-papier";
 
-new ScrollMagic.Scene({
-    triggerElement: "#reveal",
-    triggerHook: 0.8,
-    offset: 50 
-})
-.setClassToggle("#reveal", "visible")
-
-.addTo(controller);
-
-new ScrollMagic.Scene({
-    triggerElement: "#enter1",
-    triggerHook: 0.7, 
-    offset: 50 
-})
-.setClassToggle("#enter1", "visible")
-
-.addTo(controller);
-
-
-new ScrollMagic.Scene({
-    triggerElement: "#reveal2",
-    triggerHook: 0.9, 
-    offset: 50 
-})
-.setClassToggle("#reveal2", "visible") 
-
-.addTo(controller);
-
-new ScrollMagic.Scene({
-    triggerElement: "#reveal3",
-    triggerHook: 0.9,
-    offset: 50 
-})
-.setClassToggle("#reveal3", "visible") 
-
-.addTo(controller);
-
-
-new ScrollMagic.Scene({
-    triggerElement: "#reveal4",
-    triggerHook: 0.9,
-    offset: 50 
-})
-.setClassToggle("#reveal4", "visible") 
-
-.addTo(controller);
+        setTimeout(function(){
+            document.getElementById("email").innerHTML = "hello@fuyu.studio";
+        }, 1200);
+    });
