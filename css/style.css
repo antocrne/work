@@ -18,18 +18,6 @@ body {
   --font2: "bc-alphapipe";
 }
 
-body:after {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-image: url("../img/bg/snow.gif");
-    opacity: 0.2;
-    z-index: 0;
-    pointer-events: none;
-  }
 
 a {
     text-decoration: none;
@@ -229,11 +217,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
 }
 
 .title__h {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .title__h h1 {
@@ -241,6 +230,8 @@ a {
     font-family: var(--font2);
     font-size: 3rem;
 }
+
+
 
 .services {
     margin-bottom: 10%;
@@ -276,6 +267,7 @@ a {
     padding-top: 10%;
 }
 
+
 .card-text {
     font-weight: 300;
 }
@@ -300,9 +292,11 @@ a {
 
 .socials a {
     margin-left: 20px;
+    
 }
 
 .social__img {
+    z-index: 1;
     width: 35px;
     transition: 0.5s ease-in-out;
 }
@@ -339,45 +333,124 @@ a {
     background-color: var(--color1);
 }
 
-.about__section {
-    padding-top: 15%;
+
+
+#about-grid-project{
+	background-color: transparent;
+}
+
+#about-grid-info{
+	background-color: transparent;
+}
+
+#about-grid{
+	display: grid; 
+	grid-template-columns: repeat(2, 50vw);
+    grid-gap:0;
+    position: relative;
     z-index: 1;
 }
 
-.about__title {
+#about-grid-project, #about-grid-info{
+	width: 50vw;
+	height: 100vh;
+	padding: 0 5vw;
+	overflow-y: scroll;
+}
+
+.p__title {
+    margin-top: 20%;
+ 
+}
+
+.p__title h2 {
     text-align: center;
+    color: var(--color2);
+    font-family: var(--font2);
+}
+
+.p__container {
+    margin-top: 15%;
     margin-bottom: 5%;
 }
 
-.about__title h1 {
-    font-weight: 600;
-    font-size: 3rem;
-    color: var(--color2);
-}
-
-.info__txt {
-    font-weight: 300;
-}
-
-.a__gallery {
-    position: relative;
-    z-index: 2;
-}
-
-.p__img {
-    width: 100%;
-    margin: auto;
-}
-
-.p__img img {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-}
-
-.col-sm {
+.row {
     padding-top: calc(var(--bs-gutter-x)/ 2);
     padding-bottom: calc(var(--bs-gutter-x)/ 2);
 }
 
+.p__img {
+    width: 100%;
+}
+
+.p__img img{
+    width: 100%;
+    height: 26vh;
+    object-fit: cover;
+}
+
+.a__txt p {
+    font-weight: 300;
+}
+
+.team {
+    margin-top: 5%;
+}
+
+.team__info {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.t__left {
+    justify-content: flex-end;
+}
+
+.t__left h3 {
+    font-family: var(--font2);
+    color: var(--color2);
+    text-align: right;
+}
+
+.t__left p {
+    font-weight: 300;
+    text-align: right;
+    color: var(--color3);
+    margin-top: 3%;
+    font-size: 15px;
+}
+
+.t__right {
+    justify-content: flex-start;
+}
+
+.t__right h3 {
+    font-family: var(--font2);
+    color: var(--color2);
+    
+}
+
+.t__right p {
+    font-weight: 300;
+
+    color: var(--color3);
+    margin-top: 3%;
+    font-size: 15px;
+}
+
+.t__social {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#ts1 {
+    text-align: right;
+}
+
+
+#ts2 {
+    text-align: left;
+}
 
