@@ -255,6 +255,7 @@ a:hover {
 .home__txt {
     font-weight: 300;
     color: var(--color3);
+    text-align: center;
 }
 .services__section {
    position: relative;
@@ -312,6 +313,7 @@ a:hover {
 
 .card-text {
     font-weight: 300;
+    text-align: center;
 }
 
 .border-top {
@@ -419,6 +421,14 @@ a:hover {
     font-size: 3rem;
 }
 
+.p__title p {
+    text-align: center;
+    font-weight: 300;
+    color: var(--color3);
+    font-style: italic;
+    
+}
+
 .p__container {
     margin-top: 10%;
     margin-bottom: 5%;
@@ -444,6 +454,16 @@ a:hover {
 
 .a__txt p {
     font-weight: 300;
+    text-align: center;
+}
+
+#nota {
+    color: var(--color3);
+}
+
+#aG {
+    color: var(--color2);
+    font-style: italic;
 }
 
 .team {
@@ -509,4 +529,73 @@ a:hover {
 #ts2 {
     text-align: left;
 }
+
+.project__container {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.project__title h2 {
+    text-align: center;
+    font-family: var(--font2);
+    color: var(--color2);
+    margin-bottom: 5%;
+}
+
+.row__project {
+    padding-top: calc(var(--bs-gutter-x)/ 2);
+    padding-bottom: calc(var(--bs-gutter-x)/ 2);
+}
+
+.project__img {
+    position: relative;
+}
+
+.project__img img {
+    display: block;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color1);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    opacity: 0.5;
+  }
+  
+  .project__img:hover .overlay {
+    height: 100%;
+    opacity: 1;
+  }
+  
+  .text {
+    color: var(--color4);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+    font-weight: 300;
+  }
+
+  .nota__bene {
+      margin-bottom: 5%;
+  }
+
+  .nota__bene p {
+      font-weight: 300;
+      text-align: center;
+  }
 
