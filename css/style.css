@@ -77,9 +77,7 @@ a:hover {
     text-align: end;
 }
 
-.is-underline {
-    border-bottom: 1px solid var(--color1);
-}
+
 
 .toggle__index {
     background-color: var(--color4) !important;
