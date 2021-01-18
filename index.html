@@ -143,9 +143,13 @@
 <script>
     AOS.init();
 
-    if(window.innerWidth > window.innerHeight){
-    alert("Please use Portrait!");
+    if(window.innerHeight > window.innerWidth){
+    alert("Please use Landscape!");
     }
+
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        alert("Hello World!");
+}
   </script>
 </body>
 </html>
