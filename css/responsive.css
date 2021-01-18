@@ -150,6 +150,23 @@
         font-size: 13px;
     }
 }
+@media screen and (max-width: 736px) {
+
+    .card {
+        width: 9rem;
+    }
+
+    .card-img-top {
+        width: 60px;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+    .card-text {
+        font-size: 11.5px;
+    }
+    
+}
 @media screen and (max-width: 667px) {
     .mainvisual__img {
         width: 200px;
@@ -263,7 +280,7 @@
     .about__content {
         width: 90%;
         margin: auto;
-        margin-top: 0%;
+        margin-top: 10%;
         overflow: hidden;
     }
 
