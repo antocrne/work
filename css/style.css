@@ -24,6 +24,11 @@ a {
     color: var(--color1);
 }
 
+a:hover {
+    text-decoration: none;
+    color: var(--color1);
+}
+
 
 .header {
     width: 100%;
@@ -247,7 +252,7 @@ a {
 
 
 .services {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .col {
@@ -296,6 +301,12 @@ a {
     font-size: 14px;
     align-items: center;
     z-index: 1;
+}
+
+.clients {
+    text-align: center;
+    margin-bottom: 10%;
+
 }
 
 .socials {
@@ -348,41 +359,28 @@ a {
 
 
 
-#about-grid-project{
-	background-color: transparent;
+.about__content {
+    width: 65%;
+    margin: auto;
 }
-
-#about-grid-info{
-	background-color: transparent;
-}
-
-#about-grid{
-	display: flex; 
-    position: relative;
-    z-index: 1;
-}
-
-#about-grid-project, #about-grid-info{
-	width: 50vw;
-	height: 100vh;
-	padding: 0 5vw;
-	overflow-y: scroll;
-}
-
 .p__title {
     margin-top: 20%;
- 
 }
 
 .p__title h2 {
     text-align: center;
     color: var(--color2);
     font-family: var(--font2);
+    font-size: 3rem;
 }
 
 .p__container {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 5%;
+}
+
+.team__container {
+    margin-top: 15%;
 }
 
 .row {
@@ -396,7 +394,6 @@ a {
 
 .p__img img{
     width: 100%;
-    height: 26vh;
     object-fit: cover;
 }
 
@@ -409,10 +406,8 @@ a {
 }
 
 .team__info {
+    margin: 3%;
     margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
 }
 
 .t__left {
@@ -423,13 +418,14 @@ a {
     font-family: var(--font2);
     color: var(--color2);
     text-align: right;
+    font-size: 2.2rem;
 }
 
 .t__left p {
     font-weight: 300;
     text-align: right;
     color: var(--color3);
-    margin-top: 3%;
+    margin-top: 10%;
     font-size: 15px;
 }
 
@@ -440,22 +436,26 @@ a {
 .t__right h3 {
     font-family: var(--font2);
     color: var(--color2);
-    
+    font-size: 2.2rem;
 }
 
 .t__right p {
     font-weight: 300;
-
+    text-align: left;
     color: var(--color3);
-    margin-top: 3%;
+    margin-top: 10%;
     font-size: 15px;
 }
 
 .t__social {
+    margin-top: 3%;
     font-weight: 300;
     font-size: 15px;
 }
 
+.a__link {
+    margin-bottom: 2%;
+}
 #ts1 {
     text-align: right;
 }

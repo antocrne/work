@@ -1,4 +1,25 @@
 
+@media screen and (max-width: 768px) {
+
+    .about__content {
+        margin-top: 10%;
+        width: 80%;
+        overflow: hidden;
+    }
+    .p__title h2 {
+        font-size: 2rem;
+    }
+
+    .t__left h3 {
+       
+        font-size: 1.5rem;
+    }
+
+    .t__right h3 {
+       
+        font-size: 1.5rem;
+    }
+}
 @media screen and (max-width: 568px) {
     .mainvisual__img {
         width: 250px
@@ -57,17 +78,24 @@
          padding-bottom: 0; 
     }
 
-    #about-grid{
-        display: flex; 
-        flex-direction: column-reverse;
-        position: relative;
-        z-index: 1;
+    .about__content {
+        width: 90%;
+        margin: auto;
+        margin-top: 20%;
+        overflow: hidden;
     }
 
-    #about-grid-project, #about-grid-info {
-        width: 100vw;
-        height: 100vh;
-        padding: 0 5vw;
-        overflow-y: scroll;
+    .p__title h2 {
+        font-size: 1rem;
+    }
+
+    .t__left h3 {
+       
+        font-size: 1.5rem;
+    }
+
+    .t__right h3 {
+       
+        font-size: 1.5rem;
     }
 }
